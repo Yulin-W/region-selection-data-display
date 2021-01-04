@@ -198,6 +198,7 @@ export default class App extends React.Component {
 
   updateTotals(layer, add) {
     let layerKey = layer.feature.properties.ISO_A3;
+    console.log(layerKey);
     for (const key of Object.keys(this.totals)) {
       if (add) {
         this.totals[key] += regData[layerKey][key];
