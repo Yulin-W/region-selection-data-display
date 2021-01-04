@@ -38,7 +38,7 @@ tblCols.forEach((ind) => {
 
 // Read in region data from github repo
 let regData;
-fetch("https://raw.githubusercontent.com/Yulin-W/nation-selection-data-viewer/main/nation-data-preparer/data.json")
+fetch("https://raw.githubusercontent.com/Yulin-W/region-selection-data-display/main/src/data.json")
   .then((r) => r.json())
   .then((r) => {regData=r;});
 
