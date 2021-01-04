@@ -1,70 +1,30 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Region Selection Data Display
+[Click for application](https://yulin-w.github.io/region-selection-data-display/)
+## Disclaimer
+The regions in this application, the data of this application, and this application in general are not intended to be exact nor do they represent personal views of the author. This application is provided without any warranty of any kind whatsoever, either express or implied.
+## Example of use
+![](https://raw.githubusercontent.com/Yulin-W/region-selection-data-display/master/example.gif)
+## What this app does
+- Allows easy selection of regions on the world map and displays some key indicators (World Dank data, most recent data that it at most from 5 years ago) including the sum of the selection, currently including
+  - Population
+  - GDP nominal
+  - GDP per capital nominal
+  - Land area
+- Other features
+  - Data table allows sorting by columns
+  - Background basemap gives detailed geographic info of local region upon zooming
+  - Hovering over regions will display the name of the region in the top right box
+## Note
+- Certain regions are omitted due to a lack of World Bank Data on them
+- nation-data-preparer folder contains python script for extracting desired indicator data from World Bank Database and outputting it into a json file in its directory (to update the data in the app, this json file will need to be copied and pasted to replace the one in the src folder)
+## Development notes
+- Some key dependencies (check package.json for details)
+  - Leaflet
+  - React-leaflet
+  - React
+  - Material-UI
+## Extra Acknowledgements
+- Regions data source: World Bank (accessed via wbdata module)
+- "geojson_nation.js" were modified from:
+  - Data source: Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com. 
+  - Data transformed to geoJSON at https://geoconverter.hsr.ch/vector, provided by Geometa Lab at IFS HSR

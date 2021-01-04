@@ -1,0 +1,11 @@
+# Possible future changes (though unlikely in near term)
+- Clean up code and do code partition to separate files for ease of access
+- More code commenting
+- Make the region label change process react like, i.e. use states to do it not vanilla js event listeners
+- Experiment with live reading of data from worldbank database (though so far attempts have been quite slow and not responsive)
+- Add more selectable indicators
+- Improve python data fetching performance (e.g. consider fetching a single long list of data from the worldbank api instead of doing it by country and by region)
+- Allow more choices of basemap tilelayer
+- Get rid of the needing to copy and paste nation-data-preparer region data json file to the src folder step; just directly make app read data from the github path of the json file via a url fetch
+- Display year of data per cell
+- Multiple selections
