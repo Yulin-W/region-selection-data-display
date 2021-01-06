@@ -9,3 +9,4 @@
 - Get rid of the needing to copy and paste nation-data-preparer region data json file to the src folder step; just directly make app read data from the github path of the json file via a url fetch
 - Display year of data per cell
 - Multiple selections
+- Clear selection button
