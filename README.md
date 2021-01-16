@@ -3,6 +3,7 @@
 ## Disclaimer
 The regions in this application, the data of this application, and this application in general are not intended to be exact nor do they represent personal views of the author. This application is provided without any warranty of any kind whatsoever, either express or implied.
 ## Example of use
+Click to add a region to selection, click again to remove the region from selection.
 ![](https://raw.githubusercontent.com/Yulin-W/region-selection-data-display/master/example.gif)
 ## What this app does
 - Allows easy selection of regions on the world map and displays some key indicators (World Dank data, most recent data that it at most from 5 years ago) including the sum of the selection, currently including
