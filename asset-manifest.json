@@ -5,17 +5,17 @@
     "main.js.map": "/region-selection-data-display/static/js/main.f1eb65c5.chunk.js.map",
     "runtime-main.js": "/region-selection-data-display/static/js/runtime-main.4e27b3b2.js",
     "runtime-main.js.map": "/region-selection-data-display/static/js/runtime-main.4e27b3b2.js.map",
-    "static/css/2.b4ebbe46.chunk.css": "/region-selection-data-display/static/css/2.b4ebbe46.chunk.css",
+    "static/css/2.da98c186.chunk.css": "/region-selection-data-display/static/css/2.da98c186.chunk.css",
     "static/js/2.e1f9a260.chunk.js": "/region-selection-data-display/static/js/2.e1f9a260.chunk.js",
     "static/js/2.e1f9a260.chunk.js.map": "/region-selection-data-display/static/js/2.e1f9a260.chunk.js.map",
     "index.html": "/region-selection-data-display/index.html",
-    "static/css/2.b4ebbe46.chunk.css.map": "/region-selection-data-display/static/css/2.b4ebbe46.chunk.css.map",
+    "static/css/2.da98c186.chunk.css.map": "/region-selection-data-display/static/css/2.da98c186.chunk.css.map",
     "static/css/main.a4e7b0eb.chunk.css.map": "/region-selection-data-display/static/css/main.a4e7b0eb.chunk.css.map",
     "static/js/2.e1f9a260.chunk.js.LICENSE.txt": "/region-selection-data-display/static/js/2.e1f9a260.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4e27b3b2.js",
-    "static/css/2.b4ebbe46.chunk.css",
+    "static/css/2.da98c186.chunk.css",
     "static/js/2.e1f9a260.chunk.js",
     "static/css/main.a4e7b0eb.chunk.css",
     "static/js/main.f1eb65c5.chunk.js"
