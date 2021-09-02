@@ -11,6 +11,8 @@ Click to add a region to selection, click again to remove the region from select
   - GDP nominal
   - GDP per capital nominal
   - Land area
+  - Arable land
+  - Renewable internal freshwater
 - Other features
   - Data table allows sorting by columns
   - Background basemap gives detailed geographic info of local region upon zooming
