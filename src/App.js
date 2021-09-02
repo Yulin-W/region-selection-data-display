@@ -27,7 +27,9 @@ const tblCols = [
   { field: "pop" , headerName: "Population", type: "number"},
   { field: 'gdpNom', headerName: "GDP", description: 'GDP (Nominal Million US$)', type: "number", valueFormatter: (params: ValueFormatterParams) => Math.round(params.value/1000000)},
   { field: "gdpPerCapNom", headerName: "GDP per cap", description: "GDP per capita (Nominal US$)", type: "number", valueFormatter: (params: ValueFormatterParams) => Math.round(params.value)},
-  { field: "landArea", headerName: "Area", description: "Land Area (sqkm)", type: "number"}
+  { field: "landArea", headerName: "Area", description: "Land Area (sqkm)", type: "number"},
+  { field: "renewableWater", headerName: "Renewable water", description: "Renewable internal fresh water (billion cubic metres)", type: "number"},
+  { field: "arableLand", headerName: "Arable land", description: "Arable land (hectares)", type: "number"},
 ]
 
 // Dictionary for linking fields to headerName
@@ -206,6 +208,8 @@ export default class App extends React.Component {
         this.totals[key] -= regData[layerKey][key];
       }
     }
+
+    /*Set some overriding or custom summary stats*/
     this.totals["gdpPerCapNom"] = this.totals.gdpNom/this.totals.pop;
   }
 

@@ -5,12 +5,16 @@ import pycountry
 import json
 
 # Dictionary to associate the tblCol fields with the correpsonding worldbank indicator code
-# To get mode indicator data, add the indicator code here, and also change the corresponding key values in the app
+# To get mode indicator data, add the indicator code here, and also change the corresponding key values in the app.js
+# Also need to copy the updated data.json into the src folder
+# For certain summary values, e.g. value per capita, you might have to go into App.js and manually set it
 WB_IND_CODE = {
     "pop": "SP.POP.TOTL",
     "gdpNom": "NY.GDP.MKTP.CD",
     "gdpPerCapNom": "NY.GDP.PCAP.CD",
-    "landArea": "AG.LND.TOTL.K2"
+    "landArea": "AG.LND.TOTL.K2",
+    "renewableWater": "ER.H2O.INTR.K3",
+    "arableLand": "AG.LND.ARBL.HA",
 }
 
 # Dictionary to associate region names with iso 3 place codes

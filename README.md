@@ -18,6 +18,8 @@ Click to add a region to selection, click again to remove the region from select
 ## Note
 - Certain regions are omitted due to a lack of World Bank Data on them
 - nation-data-preparer folder contains python script for extracting desired indicator data from World Bank Database and outputting it into a json file in its directory (to update the data in the app, this json file will need to be copied and pasted to replace the one in the src folder)
+  - Currently very badly optimized; as in, the fetching is incredibly slow
+- To add new indicators, need to first modify the python script, fetch the data, then modify the app.js alongside possibly adding extra summary stat definition if such is desired.
 ## Development notes
 - Some key dependencies (check package.json for details)
   - Leaflet
